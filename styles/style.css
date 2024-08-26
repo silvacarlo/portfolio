@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-primaria: #0F0E0E;
+    --cor-secundaria: #DCD7C9;
+    --cor-terciaria: #8B9A4C;
+    --cor-hover: #541212;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --font-secundaria: "Montserrat",sans-serif;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  /* height: 100vh; */
+  box-sizing: border-box;
+  background-color:var(--cor-primaria);   /*Inserir cor no fundo */
+  color: var(--cor-secundaria);              /*Inserir cor no texto*/
+} 
+.titulo-destaque {
+     color:var(--cor-terciaria);
+  }
+  .cabeçalho{
+    padding: 2% 0% 0% 18%; /* colocar espaço nas palavras*/
+  }
+
+  .cabeçalho__menu{
+    display: flex;
+    gap: 80px;
+  }
+
+
+  .cabeçalho__menu__link{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+  }
+
+
+  .apresentacao{
+  padding: 3% 18%;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;  /*Alinhar elementos*/
+  gap: 82px;
+}
+
+.apresentacao__conteudo{ 
+  width: 50%;   /* Configurar largura */
+  display:flex;
+  flex-direction: column; /* colocar palavras na vertical*/
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+font-size: 2.25rem; /* Configurar  tamanho da fonte */
+font-family: var(--font-secundaria); /* fonte do google */
+}
+
+.apresentacao__conteudo__texto{
+font-size: 1.5rem; /*congurar tamanho do texto*/
+font-family: var(--font-secundaria) /* Altera texto */
+}
+ .apresentacao__links{
+  font-size: 1.6rem; /*Tamanho da fonte*/
+  flex-direction: column; /* colocar palavras a vertical */
+  display: flex; /* Tem que colocar o flexbox*/
+  justify-content:space-between;
+  align-items: center; 
+  gap: 32px;
+ 
+}
+
+.apresentacao__links__subtitulos{
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+ .apresentacao__links__link {
+  /* background-color: Colocar cor no fundo */
+  display: flex;
+  justify-content:center; /* colocar a palavra no centro */
+  gap: 8px;
+  border: 4px solid var(--cor-terciaria);
+  width: 100%;          /* Largura do elemento */
+  text-align: center;    /* alinhar texto centro */
+  border-radius: 8px;   /* Aredonda bordas */
+  padding: 21px 0;       /* Poder colocar dois valores */
+  text-decoration: none; /* Tirar decoraçao ou subrinhado */
+  color: var(--cor-secundaria);     /* Altera a cor da fonte */
+  font-family: var(--font-secundaria);
+}
+
+.apresentacao__links__link:hover{
+background-color: var(--cor-hover);
+padding: 2%;
+}
+
+.apresentacao__imagem{
+  width: 50%;
+}
+
+.rodape{
+  padding: 30px; /*Aumentar ou diminuir a borda */
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  text-align: center; /* Alinhar texto */
+  font-family: var(--font-secundaria);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) { /* Definir a largura da tela para diversos tamanhos */
+.cabeçalho {
+  padding: 10%;
+
+.cabeçalho__menu {
+  justify-content: center;  /* centralizar texto */
+}
+}
+
+.apresentacao {
+  flex-direction: column-reverse;   /* colocar a imagem encima ou em baixo e inverter */
+  padding: 5%;
+}
+
+.apresentacao__conteudo {
+       width: auto; /* Redefini uma largura automática  pode usa 100% também*/
+  }
+}
+
